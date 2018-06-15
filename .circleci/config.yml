@@ -32,7 +32,10 @@ jobs:
 
       - run: npm install
 
-      
+      - run:
+          name: DB migration config
+          command: cp config/config{.sample,}.json
+    
       - run:
           name: Create DB 
           command: NODE_ENV=test npm run sequelize -- db:create
