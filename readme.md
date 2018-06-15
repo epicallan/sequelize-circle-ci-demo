@@ -1,0 +1,1 @@
+# Circle-ci sequelize demo

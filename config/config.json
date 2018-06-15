@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "rootuser",
+    "password": "rootuser",
+    "database": "demo-dev",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "database": "demo-test",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "database": "demo-prod",
+    "dialect": "postgres"
+  }
+}
