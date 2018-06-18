@@ -6,7 +6,6 @@
     "dialect": "postgres"
   },
   "test": {
-    "username": "root",
     "database": "demo-test",
     "dialect": "postgres"
   },

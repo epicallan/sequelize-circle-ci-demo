@@ -20,6 +20,9 @@ jobs:
     
     working_directory: ~/repo
 
+    environment:
+       NODE_ENV: "test"
+
     steps:
       - checkout
 
@@ -38,11 +41,11 @@ jobs:
     
       - run:
           name: Create DB 
-          command: NODE_ENV=test npm run sequelize -- db:create
+          command: npm run sequelize -- db:create
 
       - run:
           name: Migrate DB
-          command: NODE_ENV=test npm run sequelize -- db:migrate
+          command: npm run sequelize -- db:migrate
 
       - save_cache:
           paths:
